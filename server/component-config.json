@@ -1,0 +1,13 @@
+{
+	"loopback-component-explorer": {
+		"mountPath": "/explorer",
+		"generateOperationScopedModels": true
+	},
+	"loopback-component-auto-migrate": {
+		"enabled": false,
+		"raiseError": false,
+		"migration": "auto-migrate-data",
+		"models": ["User", "AccessToken", "ACL", "Role", "RoleMapping"],
+		"fixtures": "./test/fixtures/"
+	}
+}
